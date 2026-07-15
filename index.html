@@ -1,55 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure Retail System</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Retail System</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">🛒 Secure Retail</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<nav>
+  <a href="index.html" class="logo">🛒 Secure<span>Retail</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
 
-    <div class="hero">
-        <h1>Welcome to Secure Retail System</h1>
-        <p>Your safe, reliable, and private online shopping platform</p>
-        <a href="about.html" class="btn">Learn More</a>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Group 5 — Capstone A</div>
+    <h1>Shop Securely.<br><span>Stay In Control.</span></h1>
+    <p>A secure, reliable shopping cart system that protects your data and never loses your items — even offline.</p>
+    <div class="hero-btns">
+      <a href="about.html" class="btn-primary">Learn More</a>
+      <a href="contact.html" class="btn-outline">Contact Us</a>
     </div>
+  </div>
+</div>
 
-    <div class="section">
-        <h2>Project Overview</h2>
-        <p>We are building a secure shopping cart system for the Secure Retail System — Capstone A, Group 5. Our system protects customer data, saves cart progress, and ensures a smooth shopping experience.</p>
+<!-- Stats -->
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num">4</div><div class="stat-label">Team Members</div></div>
+  <div class="stat"><div class="stat-num">3</div><div class="stat-label">Sprints</div></div>
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Secure</div></div>
+  <div class="stat"><div class="stat-num">MVP</div><div class="stat-label">Ready</div></div>
+</div>
 
-        <div class="cards">
-            <div class="card">
-                <h3>🔒 Secure Login</h3>
-                <p>Only authorised users can access their private shopping cart.</p>
-            </div>
-            <div class="card">
-                <h3>🛒 Cart Privacy</h3>
-                <p>Each cart is locked to that user — no one else can view or edit it.</p>
-            </div>
-            <div class="card">
-                <h3>💾 Saved Progress</h3>
-                <p>Your cart is saved even if you lose internet or close the app.</p>
-            </div>
-            <div class="card">
-                <h3>✅ Input Validation</h3>
-                <p>Blocks invalid or fake item entries to keep the system reliable.</p>
-            </div>
+<!-- Features -->
+<div class="section">
+  <div class="section-label">What We Built</div>
+  <h2>Core Features</h2>
+  <p class="section-desc">Our MVP delivers everything customers need for a safe, smooth shopping experience.</p>
+  <div class="cards">
+    <div class="card">
+      <span class="card-icon">🔒</span>
+      <h3>Secure Login</h3>
+      <p>Only authorised users can access their private shopping cart. Sessions are fully protected.</p>
+    </div>
+    <div class="card">
+      <span class="card-icon">🛒</span>
+      <h3>Cart Privacy</h3>
+      <p>Each cart is locked strictly to that user. No one else can view or edit your selections.</p>
+    </div>
+    <div class="card">
+      <span class="card-icon">💾</span>
+      <h3>Saved Progress</h3>
+      <p>Your cart stays saved even if you lose internet or close the app. Pick up where you left off.</p>
+    </div>
+    <div class="card">
+      <span class="card-icon">✅</span>
+      <h3>Input Validation</h3>
+      <p>Blocks fake or negative item entries instantly. Keeps the system reliable and error-free.</p>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Products -->
+<div class="section">
+  <div class="section-label">Our Store</div>
+  <h2>Featured Products</h2>
+  <p class="section-desc">Browse our product catalogue — all items can be securely added to your private cart.</p>
+  <div class="products">
+    <div class="product-card">
+      <div class="product-img">👟</div>
+      <div class="product-body">
+        <div class="product-tag">Footwear</div>
+        <h3>Premium Sneakers</h3>
+        <p>Lightweight and durable — perfect for everyday wear.</p>
+        <div class="product-footer">
+          <span class="price">$89.99</span>
+          <button class="add-btn">+ Add to Cart</button>
         </div>
+      </div>
     </div>
+    <div class="product-card">
+      <div class="product-img">🎧</div>
+      <div class="product-body">
+        <div class="product-tag">Electronics</div>
+        <h3>Wireless Headphones</h3>
+        <p>Crystal clear sound with 30-hour battery life.</p>
+        <div class="product-footer">
+          <span class="price">$129.99</span>
+          <button class="add-btn">+ Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img">👜</div>
+      <div class="product-body">
+        <div class="product-tag">Accessories</div>
+        <h3>Leather Backpack</h3>
+        <p>Sleek design with multiple secure compartments.</p>
+        <div class="product-footer">
+          <span class="price">$74.99</span>
+          <button class="add-btn">+ Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img">⌚</div>
+      <div class="product-body">
+        <div class="product-tag">Wearables</div>
+        <h3>Smart Watch</h3>
+        <p>Track your fitness, notifications, and more.</p>
+        <div class="product-footer">
+          <span class="price">$199.99</span>
+          <button class="add-btn">+ Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img">📱</div>
+      <div class="product-body">
+        <div class="product-tag">Electronics</div>
+        <h3>Phone Case</h3>
+        <p>Military-grade drop protection with slim design.</p>
+        <div class="product-footer">
+          <span class="price">$24.99</span>
+          <button class="add-btn">+ Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-img">☕</div>
+      <div class="product-body">
+        <div class="product-tag">Lifestyle</div>
+        <h3>Travel Mug</h3>
+        <p>Keeps drinks hot for 12 hours, cold for 24 hours.</p>
+        <div class="product-footer">
+          <span class="price">$34.99</span>
+          <button class="add-btn">+ Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <footer>
-        <p><span>Group 5</span> — Rahul | Nishant | Sujan | Sandesh &nbsp;|&nbsp; Capstone A &nbsp;|&nbsp; Secure Retail System</p>
-    </footer>
+<footer>
+  <div class="footer-logo">🛒 Secure<span>Retail</span></div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-bottom">
+    Group 5 — Rahul &nbsp;|&nbsp; Nishant &nbsp;|&nbsp; Sujan &nbsp;|&nbsp; Sandesh &nbsp;·&nbsp; Capstone A
+  </div>
+</footer>
 
+<script>
+function toggleMenu(){
+  const m=document.getElementById('mobileMenu');
+  m.classList.toggle('open');
+}
+document.querySelectorAll('.add-btn').forEach(btn=>{
+  btn.addEventListener('click',function(){
+    this.textContent='✓ Added!';
+    this.style.background='#1E6B3C';
+    setTimeout(()=>{this.textContent='+ Add to Cart';this.style.background=''},2000);
+  });
+});
+</script>
 </body>
 </html>
