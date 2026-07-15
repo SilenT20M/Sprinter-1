@@ -1,66 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Secure Retail System</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Secure Retail System</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">🛒 Secure Retail</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<nav>
+  <a href="index.html" class="logo">🛒 Secure<span>Retail</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
 
-    <div class="hero">
-        <h1>About Our Project</h1>
-        <p>Learn about the Secure Retail System and our team</p>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="page-hero">
+  <h1>About Our Project</h1>
+  <p>Learn about the Secure Retail System and the team behind it</p>
+</div>
+
+<!-- Description -->
+<div class="section">
+  <div class="section-label">Who We Are</div>
+  <h2>Project Description</h2>
+  <p class="section-desc">The Secure Retail System is a shopping cart module built for Capstone A, Group 5. Our system protects customer data, saves cart progress across sessions, and ensures each customer's cart remains completely private and secure.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- Problems -->
+<div class="section">
+  <div class="section-label">Why We Built This</div>
+  <h2>Problems We Solve</h2>
+  <div class="problem-grid">
+    <div class="problem-card">
+      <h3>🛒 Lost Shopping Carts</h3>
+      <p>Customers spend time picking items, lose internet or close the app — their cart disappears. This kills sales momentum and causes purchase abandonment. Our system saves carts on the server so they never disappear.</p>
     </div>
-
-    <div class="section">
-        <h2>Project Description</h2>
-        <p>The Secure Retail System is a shopping cart module built for Capstone A. It protects customer data, saves cart progress across sessions, and ensures each customer's cart remains completely private.</p>
+    <div class="problem-card">
+      <h3>🔓 Weak Security</h3>
+      <p>Basic online stores leave session tokens unprotected. Malicious users can see or tamper with another customer's private cart data. We lock every cart strictly to its owner.</p>
     </div>
-
-    <div class="section">
-        <h2>Problem Statement</h2>
-        <p>Many online stores lose customer carts when internet is lost or the app is closed. Our system solves this by saving carts securely on the server. We also protect session tokens so no malicious user can access another customer's private cart data.</p>
+    <div class="problem-card">
+      <h3>📋 No Task Tracking</h3>
+      <p>Without proper workflow tools, teams overwrite each other's work and lose code. We use GitHub Issues, branches, and Pull Requests to keep everything organised and safe.</p>
     </div>
+  </div>
+</div>
 
-    <div class="section">
-        <h2>Our Team — Group 5</h2>
-        <div class="team-grid">
-            <div class="team-card">
-                <div class="avatar">R</div>
-                <h3>Rahul</h3>
-                <p>Project Manager</p>
-            </div>
-            <div class="team-card">
-                <div class="avatar">N</div>
-                <h3>Nishant</h3>
-                <p>Developer</p>
-            </div>
-            <div class="team-card">
-                <div class="avatar">S</div>
-                <h3>Sujan</h3>
-                <p>Reviewer</p>
-            </div>
-            <div class="team-card">
-                <div class="avatar">S</div>
-                <h3>Sandesh</h3>
-                <p>Tester</p>
-            </div>
-        </div>
+<div class="divider"></div>
+
+<!-- Team -->
+<div class="section">
+  <div class="section-label">The People</div>
+  <h2>Our Team — Group 5</h2>
+  <p class="section-desc">Four students working together using Agile methodology and GitHub collaboration.</p>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="avatar">R</div>
+      <h3>Rahul</h3>
+      <p>Oversees sprint, merges PRs, creates version tags</p>
+      <span class="team-badge">Project Manager</span>
     </div>
+    <div class="team-card">
+      <div class="avatar">N</div>
+      <h3>Nishant</h3>
+      <p>Builds all HTML pages, CSS styling, and GitHub workflow</p>
+      <span class="team-badge">Developer</span>
+    </div>
+    <div class="team-card">
+      <div class="avatar">S</div>
+      <h3>Sujan</h3>
+      <p>Reviews Pull Requests and approves all code merges</p>
+      <span class="team-badge">Reviewer</span>
+    </div>
+    <div class="team-card">
+      <div class="avatar">S</div>
+      <h3>Sandesh</h3>
+      <p>Creates Issues, tests all pages, reports bugs</p>
+      <span class="team-badge">Tester</span>
+    </div>
+  </div>
+</div>
 
-    <footer>
-        <p><span>Group 5</span> — Rahul | Nishant | Sujan | Sandesh &nbsp;|&nbsp; Capstone A &nbsp;|&nbsp; Secure Retail System</p>
-    </footer>
+<footer>
+  <div class="footer-logo">🛒 Secure<span>Retail</span></div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-bottom">
+    Group 5 — Rahul &nbsp;|&nbsp; Nishant &nbsp;|&nbsp; Sujan &nbsp;|&nbsp; Sandesh &nbsp;·&nbsp; Capstone A
+  </div>
+</footer>
 
+<script>
+function toggleMenu(){
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+</script>
 </body>
 </html>
